@@ -1,0 +1,13 @@
+{
+"name":"rapid-shipping",
+"owner" : {
+"name" : "rpiplewar"
+},
+"plugins":[
+{
+"name":"prp",
+"source":"./prp",
+"description":"prp commands to ship products at rapid speed"
+}
+]
+}
