@@ -1,8 +1,8 @@
 {
-"name": "my-first-plugin",
-"description": "A simple greeting plugin to learn the basics",
-"version": "1.0.0",
+"name": "exec_mode",
+"description": "A plugin to help you plan and execute in one shot",
+"version": "1.0.1",
 "author": {
-"name": "Your Name"
+"name": "rajat piplewar"
 }
 }
