@@ -1,0 +1,259 @@
+---
+description: "Select the best content piece from scored variations and format for content-ready.md"
+---
+
+# Select Best Content for Posting
+
+## Mission
+
+Rank all PASS content (20+/30 scores), apply tie-breaker rules, and select EXACTLY ONE best piece for human review in `content-ready.md`.
+
+## Process
+
+Follow the Selector agent instructions (`agents/selector.md`) to systematically:
+
+1. **Filter for PASS content** (20+/30 scores with ✅ PASS verdict)
+2. **Rank by total score** (descending order)
+3. **Apply tie-breaker rules** if multiple pieces tied for first
+4. **Validate selection** against quality gates
+5. **Format for content-ready.md** with posting instructions
+6. **Document runner-ups** (top 3 alternatives)
+
+## Execution Steps
+
+### Step 1: Read Scored Content
+
+**Input Source**: `content-drafts.md` with completed scores and critic verdicts
+
+**Required Data**:
+- Total scores (Gap + Biases + Decision = XX/30)
+- Critic verdict (✅ PASS or ❌ FAIL)
+- Subscore breakdowns (Gap subscore, Hook subscore, Bias count)
+- Content text and theme information
+
+### Step 2: Filter and Rank
+
+**Filter Criteria**:
+- Total score ≥ 20/30
+- Critic verdict: ✅ PASS
+- Factually accurate (verified by Critic)
+
+**Ranking**:
+- Primary: Sort by total score (descending)
+- Expected: 12-20 PASS pieces from 25 total variations
+
+**Quality Alert**:
+- If < 5 PASS pieces: Alert user that quality is below threshold
+- Consider regenerating content with stronger constraints
+
+### Step 3: Apply Tie-Breaker Rules
+
+**If multiple pieces have same total score**, apply tie-breakers in order:
+
+1. **Gap Selling Subscore**: Higher Gap score wins (problem clarity most important)
+2. **Hook Strength**: Higher Hook subscore wins (first line = 80% of engagement)
+3. **Lollapalooza Effect**: Content with 5+ biases wins (exponential persuasive power)
+4. **Bias Diversity**: More unique biases wins (broader psychological appeal)
+5. **Theme Novelty**: Less-used theme wins (prevents theme fatigue)
+6. **Human Judgment**: If still tied, flag for manual decision
+
+### Step 4: Validate Selection
+
+Before finalizing, verify:
+
+**Quality Gates**:
+- [ ] Selected piece scores 20+/30 (ideally 25+/30)
+- [ ] All three frameworks adequately addressed (no subscore < 5)
+- [ ] Factually accurate (verified by Critic)
+- [ ] High engagement potential (hook + emotional resonance)
+
+**Platform Appropriateness**:
+- [ ] Twitter/X character limits respected (280 single or thread)
+- [ ] Tone matches platform (conversational, punchy)
+- [ ] Format clean (line breaks, readability)
+
+**Strategic Fit**:
+- [ ] Theme aligns with user's positioning
+- [ ] Message supports broader narrative
+- [ ] Timing appropriate (seasonally relevant)
+
+### Step 5: Write to content-ready.md
+
+**Location**: `/home/rpiplewar/fast_dot_ai/poasting/content-ready.md`
+
+**Action**: OVERWRITE file (only ONE piece should exist)
+
+**Format**:
+```markdown
+# Content Ready to Post
+
+**Date Generated:** {ISO Timestamp}
+**Theme:** {Theme Name}
+**Source:** {Linear Task ID}
+**Total Score:** {XX/30}
+
+---
+
+## Content
+
+{Content exactly as it should be posted}
+
+---
+
+## Scoring Breakdown
+
+**Gap Selling:** X/10 (Problem: X/3, Impact: X/3, Solution: X/4)
+**Cognitive Biases:** Y (List: Bias1, Bias2, Bias3...)
+**Decision Framework:** Z/10 (Hook: X/3, Value: X/4, CTA: X/3)
+**TOTAL: XX/30**
+
+---
+
+## Why This Piece?
+
+**Ranking Position:** #1 of {total_pass_count} PASS pieces
+
+**Key Strengths:**
+- {Strength from Critic notes}
+- {Strength from Critic notes}
+- {Strength from Critic notes}
+
+**Winning Elements:**
+- {Why this beat other contenders}
+- {Specific tie-breaker if applicable}
+- {Strategic fit reasoning}
+
+---
+
+## Posting Instructions
+
+**Optimal Timing:**
+- **Best Times (IST)**: 8:30 AM or 5:30 PM (high engagement windows)
+- **Avoid**: Late night (11 PM - 6 AM) or midday lull (12 PM - 2 PM)
+
+**Format Check:**
+- [ ] Character count: {count} (within 280 for single, or thread format)
+- [ ] Line breaks clean
+- [ ] No typos or formatting issues
+
+**Pre-Post Checklist:**
+- [ ] Read aloud for flow
+- [ ] Verify factual accuracy one final time
+- [ ] Check for unintended meanings or misinterpretations
+- [ ] Confirm tone matches brand voice
+
+**After Posting:**
+1. Copy final posted version to content-posted.md
+2. Add posting timestamp
+3. Set reminder to capture metrics after 48 hours
+4. Monitor engagement in first 2 hours for immediate feedback
+
+---
+
+## Alternatives (Top 3 Runner-Ups)
+
+### Runner-Up #2: {Score}
+**Theme:** {Theme Name}
+**Content Preview:** {First 50 characters}...
+**Why Not Selected:** {Reasoning}
+
+### Runner-Up #3: {Score}
+**Theme:** {Theme Name}
+**Content Preview:** {First 50 characters}...
+**Why Not Selected:** {Reasoning}
+
+### Runner-Up #4: {Score}
+**Theme:** {Theme Name}
+**Content Preview:** {First 50 characters}...
+**Why Not Selected:** {Reasoning}
+
+---
+
+**Generated by:** content-gen plugin v1.0
+**Selection Criteria:** Highest total score + tie-breaker rules
+**Human Approval Required:** YES (review before posting)
+```
+
+## Validation Checklist
+
+Before marking selection complete:
+
+- [ ] ONE piece selected (not zero, not multiple)
+- [ ] Selected piece scores 20+/30 (ideally 25+/30)
+- [ ] All tie-breakers applied correctly if needed
+- [ ] content-ready.md overwritten with formatted output
+- [ ] Posting instructions included
+- [ ] Top 3 runner-ups documented
+- [ ] Selection reasoning documented
+
+## Example Output
+
+```
+✅ Best Content Selected
+
+Selected: Theme A, Variation 1
+Score: 28/30 (EXCELLENT)
+Ranking: #1 of 18 PASS pieces
+
+Key Strengths:
+- Exceptional problem clarity (Gap: 9/10)
+- Strong emotional hook activating 6 biases
+- Clear, actionable CTA
+
+Output: content-ready.md
+Status: Ready for human review and approval
+
+Runner-Ups:
+#2: Theme C, Var 5 (27/30)
+#3: Theme B, Var 2 (26/30)
+#4: Theme A, Var 3 (25/30)
+
+Next Step: Review content-ready.md and post when ready
+```
+
+## Error Handling
+
+**If no PASS content**:
+```
+❌ Selection Failed: No content scored 20+/30
+
+Action Required:
+1. Review scorer settings (may be too harsh)
+2. Regenerate content with stronger constraints
+3. Review theme quality (may lack content generation potential)
+
+Pipeline STOPPED at selection phase.
+```
+
+**If tie-breakers don't resolve**:
+```
+⚠️ Human Decision Required
+
+Two pieces tied after all 6 automated tie-breakers.
+Both pieces displayed in content-ready.md.
+User must manually select.
+```
+
+**If content-ready.md already has content**:
+```
+⚠️ Warning: content-ready.md already contains content
+
+Options:
+1. Archive existing content to content-posted.md first
+2. Overwrite with new selection (confirm Y/N)
+3. Cancel selection
+
+Current content in content-ready.md should be posted or archived before generating new content.
+```
+
+## Next Steps
+
+After successful selection:
+
+1. Review content-ready.md
+2. Perform final quality check
+3. Post to Twitter/X at optimal time
+4. Capture metrics after 48 hours
+5. Move to content-posted.md with metrics
+
+**Or run full pipeline**: `/content-full-pipeline` to execute all stages end-to-end

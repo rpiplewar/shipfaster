@@ -8,6 +8,11 @@
 "name":"prp",
 "source":"./prp",
 "description":"prp commands to ship products at rapid speed"
+},
+{
+"name":"content-gen",
+"source":"./content-gen",
+"description":"Automated multi-agent content generation system with framework-based scoring"
 }
 ]
 }
