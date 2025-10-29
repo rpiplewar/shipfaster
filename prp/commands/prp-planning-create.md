@@ -123,7 +123,7 @@ diagrams_needed:
 10. Appendices
 ```
 
-Save as: `PRPs/{feature-name}-prd.md`
+Save as: `PRPs/working-memory/{feature-name}/{feature-name}-prd.md`
 
 ## Quality Checklist
 - [ ] Problem clearly articulated

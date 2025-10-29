@@ -67,17 +67,6 @@ You should see new commands prefixed with `/prp-`.
 | `/prp-base-execute` | Execute base PRP with full implementation |
 | `/prp-story-create` | Convert user stories to tactical PRPs |
 | `/prp-story-execute` | Execute story-based PRPs |
-| `/prp-task-create` | Create task-level PRPs |
-| `/prp-task-execute` | Execute task PRPs |
-| `/prp-planning-create` | Create planning PRPs |
-| `/prp-poc-create-parallel` | Create POC PRPs with parallel processing |
-| `/prp-poc-execute-parallel` | Execute POCs in parallel |
-| `/prp-spec-create` | Create specification PRPs |
-| `/prp-spec-execute` | Execute spec PRPs |
-| `/prp-ts-create` | Create TypeScript PRPs |
-| `/prp-ts-execute` | Execute TypeScript PRPs |
-| `/api-contract-define` | Define API contracts |
-| `/task-list-init` | Initialize task lists |
 
 ### Specialized Agents (2)
 

@@ -30,7 +30,7 @@ This command orchestrates all 5 stages of the content generation system:
 
 **Actions**:
 - Connect to Linear MCP
-- Fetch tasks POA-5 through POA-14
+- Fetch tasks POA-X through POA-Y
 - Analyze story content and identify themes
 - Extract minimum 5 distinct themes
 - Write to `themes-memory.md`

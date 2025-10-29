@@ -6,7 +6,7 @@ description: "Extract stories from Linear tasks and identify themes for content 
 
 ## Mission
 
-Connect to Linear, extract stories from POA-5 to POA-14, identify recurring themes, and output structured theme data to `themes-memory.md`.
+Connect to Linear, extract stories from as specified by user, identify recurring themes, and output structured theme data to `themes-memory.md`.
 
 ## Process
 
@@ -27,7 +27,7 @@ Check that required tools are available:
 
 - [ ] Linear MCP installed and configured
 - [ ] LINEAR_API_KEY set in .env file
-- [ ] themes-memory.md path accessible: `/home/rpiplewar/fast_dot_ai/poasting/themes-memory.md`
+- [ ] themes-memory.md path accessible: `./poasting/themes-memory.md`
 
 ### Step 2: Fetch Stories from Linear
 
@@ -39,8 +39,7 @@ mcp__linear__list_issues({
   "team": "YOUR_TEAM_ID",
   "filter": {
     "id": {
-      "in": ["POA-5", "POA-6", "POA-7", "POA-8", "POA-9",
-             "POA-10", "POA-11", "POA-12", "POA-13", "POA-14"]
+      "in": ["POA-{X}", "POA-{Y}"]
     }
   }
 })
@@ -70,7 +69,7 @@ For each identified theme, create structured output with:
 
 ### Step 4: Write to themes-memory.md
 
-**Location**: `/home/rpiplewar/fast_dot_ai/poasting/themes-memory.md`
+**Location**: `./poasting/themes-memory.md`
 
 **Action**:
 - If file doesn't exist, create with header
@@ -104,8 +103,8 @@ Before marking extraction complete:
 ```
 ✅ Story Extraction Complete
 
-Themes Extracted: 7
-Source Tasks: POA-5 to POA-14
+Themes Extracted: n
+Source Tasks: POA-X to POA-Y
 Output File: themes-memory.md
 
 Themes Identified:

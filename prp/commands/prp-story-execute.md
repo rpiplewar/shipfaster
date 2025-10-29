@@ -69,7 +69,7 @@ After all tasks complete:
 
 - Work through completion checklist
 - Ensure story requirements satisfied
-- Move completed PRP to PRPs/completed/ create the folder if it does not exist
+- Move completed PRP to PRPs/completed/{feature-name}/ create the folder if it does not exist
 
 ## Execution Rules
 

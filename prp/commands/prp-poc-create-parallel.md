@@ -165,7 +165,7 @@ unique_aspects: "Accessibility-first design with component library demonstration
 
 For each POC, generate a complete PRP file:
 
-**File:** `PRPs/poc-{problem-slug}-{variant}.md`
+**File:** `PRPs/working-memory/{feature-name}/poc-{problem-slug}-{variant}.md`
 
 **Content Structure:**
 1. **Goal Section**: Specific to UI approach + User journey combination

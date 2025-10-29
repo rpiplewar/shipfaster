@@ -124,6 +124,6 @@ Feature: $ARGUMENTS
    // Error handling utilities
    ```
 
-Save this contract as: `PRPs/contracts/{feature}-api-contract.md`
+Save this contract as: `PRPs/working-memory/{feature-name}/contracts/{feature}-api-contract.md`
 
 Share this file between backend and frontend teams for alignment.

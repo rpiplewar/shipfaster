@@ -73,7 +73,7 @@ POC 5: @ui-ux-agent (Build component-library interface) + @user-journey-agent (V
 ```yaml
 # For each discovered POC, spawn specialized agent pair
 Task 1 - @ui-ux-agent Implementation for POC 1:
-"Read and implement PRP: 'PRPs/poc-{name}-{variant1}.md'
+"Read and implement PRP: 'PRPs/working-memory/{feature-name}/poc-{name}-{variant1}.md'
 Focus on: Building the UI components and styling specified in the PRP.
 Requirements:
 - Follow the UI approach defined in the PRP context
@@ -85,7 +85,7 @@ Directory: src/poc-{name}-{variant1}/
 Return: Complete UI implementation with all components functional"
 
 Task 2 - @user-journey-agent Validation for POC 1:
-"Read and validate PRP implementation: 'PRPs/poc-{name}-{variant1}.md'
+"Read and validate PRP implementation: 'PRPs/working-memory/{feature-name}/poc-{name}-{variant1}.md'
 Focus on: Ensuring user journey flows work as specified in the PRP.
 Requirements:
 - Test all user interactions defined in the PRP
@@ -97,7 +97,7 @@ Directory: src/poc-{name}-{variant1}/
 Return: Journey validation report and any flow improvements needed"
 
 Task 3 - @ui-ux-agent Implementation for POC 2:
-"Read and implement PRP: 'PRPs/poc-{name}-{variant2}.md'
+"Read and implement PRP: 'PRPs/working-memory/{feature-name}/poc-{name}-{variant2}.md'
 Focus on: Building the UI components and styling specified in the PRP.
 Requirements:
 - Follow the UI approach defined in the PRP context (polished/professional)
@@ -109,7 +109,7 @@ Directory: src/poc-{name}-{variant2}/
 Return: Complete UI implementation with professional polish"
 
 Task 4 - @user-journey-agent Validation for POC 2:
-"Read and validate PRP implementation: 'PRPs/poc-{name}-{variant2}.md'
+"Read and validate PRP implementation: 'PRPs/working-memory/{feature-name}/poc-{name}-{variant2}.md'
 Focus on: Ensuring casual user journey flows work intuitively.
 Requirements:
 - Test simplified navigation and guided experiences
