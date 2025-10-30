@@ -4,18 +4,5 @@
   "version": "1.0.0",
   "author": {
     "name": "rajat piplewar"
-  },
-  "dependencies": {
-    "mcp": {
-      "linear": {
-        "required": true,
-        "description": "Linear MCP for story extraction and metrics tracking"
-      }
-    },
-    "frameworks": [
-      "Gap Selling (docs/frameworks/gap_selling.md)",
-      "Munger Cognitive Biases (docs/frameworks/bias_checklist_munger.md)",
-      "Decision Making Framework (docs/frameworks/effective-decision-making-framework.md)"
-    ]
   }
 }
