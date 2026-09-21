@@ -1,0 +1,25 @@
+{
+  "name": "content-gen",
+  "version": "1.0.0",
+  "description": "Create, score, review, and select social-media content from product stories.",
+  "author": {
+    "name": "Rajat Piplewar",
+    "url": "https://github.com/rpiplewar"
+  },
+  "repository": "https://github.com/rpiplewar/shipfaster",
+  "keywords": ["content", "social-media", "scoring", "writing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Content Generation",
+    "shortDescription": "Turn product stories into scored, ready-to-post content.",
+    "longDescription": "Runs an evidence-based content extraction, drafting, scoring, review, and selection workflow.",
+    "developerName": "Rajat Piplewar",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Generate content from these product stories.",
+      "Score and select the best draft for this topic."
+    ],
+    "brandColor": "#7C3AED"
+  }
+}

@@ -1,10 +1,10 @@
-# Rapid Shipping - Claude Code Plugin Collection
+# Rapid Shipping - Claude Code and Codex Plugin Collection
 
 A comprehensive plugin collection designed to accelerate product development through AI-driven automation, context engineering, and systematic validation.
 
 ## Overview
 
-**Rapid Shipping** provides a powerful plugin for Claude Code:
+**Rapid Shipping** provides compatible plugin interfaces for Claude Code and Codex:
 
 **PRP (Product Requirement Prompt)** - Transform user stories into executable implementation plans with one-pass success rates
 
@@ -19,6 +19,25 @@ The plugin emphasizes **context completeness**, **deterministic validation**, an
 - [Contributing](#contributing)
 
 ## Installation
+
+### Codex
+
+Clone the repository, then add and install the local marketplace from its root:
+
+```bash
+git clone https://github.com/rpiplewar/shipfaster.git
+cd shipfaster
+codex plugin marketplace add .
+codex plugin add prp@rapid-shipping
+codex plugin add content-gen@rapid-shipping
+```
+
+Start a new Codex thread, then use natural-language prompts such as "Create a
+story PRP for adding OAuth login" or "Run the content-generation pipeline for
+these stories." See [CODEX.md](CODEX.md) for the host mapping and workflow
+details.
+
+### Claude Code
 
 ### Prerequisites
 

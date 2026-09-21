@@ -1,0 +1,25 @@
+{
+  "name": "prp",
+  "version": "1.0.1",
+  "description": "Create and execute context-rich Product Requirement Prompts.",
+  "author": {
+    "name": "Rajat Piplewar",
+    "url": "https://github.com/rpiplewar"
+  },
+  "repository": "https://github.com/rpiplewar/shipfaster",
+  "keywords": ["planning", "prp", "implementation", "validation"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PRP",
+    "shortDescription": "Plan and execute changes with evidence and validation.",
+    "longDescription": "Creates context-engineered implementation plans and executes approved PRPs.",
+    "developerName": "Rajat Piplewar",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Create an executable PRP for my feature.",
+      "Execute this PRP and validate the implementation."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
